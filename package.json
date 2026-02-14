@@ -1,16 +1,16 @@
 {
-  "name": "fbla-project",
+  "name": "fall-local-boost",
   "version": "1.0.0",
-  "description": "",
-  "main": "Script.js",
+  "description": "FBLA Coding & Programming 2025-2026",
+  "main": "BackEnd/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node BackEnd/app.js",
+    "seed":  "node BackEnd/seed.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1"
+    "express":"^4.18.2",
+    "better-sqlite3": "^9.4.3",
+    "cors":           "^2.8.5"
   }
 }
