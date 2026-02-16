@@ -1,0 +1,36 @@
+id,Name,Category,Rating,#ratings,Description,Deals
+1,Ally's Bistro,Food,4.7,1156,Ally’s Bistro is a cozy neighborhood spot known for its warm atmosphere and thoughtfully prepared comfort food. It blends fresh ingredients with classic flavors.,Get any sandwich or entrée with a side and a drink for a discounted price during weekday lunch hours.
+2,Café Agora,Food,4.7,3138,"Cafe Agora is a casual café serving Mediterranean-inspired dishes, wraps, and coffee in a relaxed setting.",Buy one wrap or bowl and get a free fountain drink during lunch hours.
+3,Dave's Hot Chicken,Food,4.8,2484,"Dave’s Hot Chicken specializes in bold, Nashville-style hot chicken with customizable spice levels.",Get a combo meal at a discounted price after 8 PM.
+4,Bandero County Wood Grill,Food,4.4,3093,"Bandero County Wood Grill offers hearty, wood-grilled meats and classic American sides in a rustic atmosphere.",Free appetizer with purchase of two entrées on weekdays.
+5,Hot House Tavern,Food,4.4,1507,"Hot House Tavern is a laid-back tavern known for comfort food, burgers, and a rotating drink selection.",Half-price appetizers during happy hour.
+6,Kraverz Frozen Custard,Food,4.5,1699,"Kraverz Frozen Custard serves rich frozen custard, shakes, and classic dessert treats.",Buy one custard and get the second 50% off.
+7,Fiddleheads Coffee,Food,4.5,581,Fiddleheads Coffee is a modern coffee shop focused on handcrafted drinks and fresh pastries.,Free pastry with the purchase of any specialty drink.
+8,The Lunch Box Deli,Food,4.3,269,"The Lunch Box Deli is a quick-stop deli offering sandwiches, soups, and grab-and-go meals.","Any sandwich, chips, and drink for a bundled price."
+9,Café Zupas,Food,4.3,1543,"Cafe Zupas serves fresh soups, salads, and sandwiches made with clean ingredients.",Free drink with any soup-and-salad combo.
+10,Chen's Gourmet,Food,4.2,487,Chen’s Gourmet offers traditional Chinese dishes with generous portions and bold flavors.,10% off any dinner entrée with purchase of two or more items.
+11,Smart Cow Yogurt Bar,Food,4.4,392,Smart Cow Yogurt Bar is a self-serve frozen yogurt shop with a wide variety of toppings.,Get one free topping with any yogurt purchase.
+12,Woodman's Food Market,Store,4.3,8060,Woodman’s Food Market is a large grocery store known for low prices and wide selection.,$5 off a $50 grocery purchase.
+13,Piggly Wiggly,Store,4.3,760,"Local grocery store offering everyday essentials, fresh produce, and weekly specials.",Weekly in-store deals on select grocery items.
+14,Metro Market,Store,3.6,284,"Neighborhood supermarket featuring fresh foods, bakery items, and household staples.",Save $5 on a $40 purchase with store card.
+15,Pick 'n Save,Store,3.7,504,"Full-service grocery store with groceries, pharmacy items, and household products.",Digital coupon savings on select items each week.
+16,Karl's Country Market,Store,4.6,881,"Family-owned market known for fresh meats, local products, and homemade foods.",$5 off any purchase over $50.
+17,Kohl's,Store,4.1,2100,"Department store selling clothing, home goods, and accessories.",Extra 20% off one regular-priced item.
+18,Target,Store,4.2,3400,"Big-box retailer offering groceries, clothing, electronics, and home goods.","Spend $50, get a $5 Target gift card."
+19,Walmart Supercenter,Store,3.9,5100,"Large retail store providing groceries, apparel, electronics, and essentials.",Rollback pricing on select household items.
+20,William Nordstrom Jewelers,Retail,4.5,133,"Jewelry store specializing in fine jewelry, repairs, and custom designs.",Free jewelry cleaning with any visit.
+21,McDermott Cue,Retail,4.7,218,Manufacturer and retailer of high-quality billiard cues and accessories.,10% off select cue accessories.
+22,Sit Means Sit,Service,4.9,312,Professional dog training service focused on obedience and behavior control.,Free training consultation for new clients.
+23,Hand & Stone Massage,Service,4.4,687,Spa offering massage therapy and skincare services.,$10 off first massage or facial.
+24,Anytime Fitness,Service,4.3,529,24-hour fitness center with modern equipment and training options.,Free 7-day gym pass for new members.
+25,Falls Automotive,Service,4.6,401,Automotive repair shop providing maintenance and repair services.,Free vehicle inspection with any service.
+26,Evie's Vietnamese Kitchen,Food,4.7,634,Restaurant serving traditional Vietnamese dishes with fresh ingredients.,Free appetizer with purchase of two entrées.
+27,Harvey Moy's,Food,4.8,569,Classic Chinese diner-style restaurant known for comfort food favorites.,Free drink with any entrée purchase.
+28,Chili's,Food,4.3,1265,Casual dining restaurant serving American and Tex-Mex cuisine.,Free chips and salsa with any entrée.
+29,B52's,Food,4.5,589,"Local bar and grill offering burgers, drinks, and a casual atmosphere.",Half-price appetizers during happy hour.
+30,Menards,Store,4.6,1076,"Home improvement store selling building materials, tools, and home goods.",11% rebate on eligible purchases.
+31,Aldi's,Store,4.4,1216,Discount grocery store known for low prices and private-label products.,Weekly savings on Aldi Finds items.
+32,Bank of Flowers,Florist,4.8,749,Florist specializing in fresh floral arrangements and gifts.,10% off custom floral arrangements.
+33,Krueger's,Arcade,4.5,348,Arcade and entertainment spot with classic games and casual food.,"Buy $20 in tokens, get $5 free."
+34,The Garcade,Arcade,4.4,413,Arcade featuring retro and modern games in a fun environment.,Free play credit with paid entry.
+35,AJ O'brady's,Food,3.8,314,"Casual pub serving American food, drinks, and bar favorites.",Happy hour drink specials on weekdays.
