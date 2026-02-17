@@ -38,21 +38,30 @@
 <!--Business search and filter-->
 <section class="businesses-section" id="businesses">
     <div class="container"> 
-        <h2 class="section-title">Local Businesses</h2>
-    </div>
+        <h2 class="section-title">Local Business Directory</h2>
+        <p class="section-subtitle">Filter, explore, and connect with businesses in your community</p>
         <div class="search-filter-bar">
-            <div>
-            <input type="text" id = "searchInput" placeholder="Search businesses...">
-            </div>
+          
+            <input type="text" 
+                   id="searchInput" 
+                   placeholder="Search businesses by name or keywords...">
+            
+            <!-- Category Dropdown -->
             <select id="categoryFilter">
-                <option value="">All Categories</option>
-                <option value="Food">Food</option>
-                <option value="Retail">Retail</option>
-                <option value="Services">Services</option>
+                <option value="all">All Categories</option>
+                <option value="Food">Food & Dining</option>
+                <option value="Store">Store</option>
             </select>
             
+            <!-- Sort Dropdown -->
+            <select id="sortFilter">
+                <option value="">Featured</option>
+                <option value="rating-high">Highest Rated</option>
+                <option value="most-reviews">Most Reviews</option>
+                <option value="name">A-Z</option>
+            </select>
         </div>
-    
+    </div>
 </section>
 <!-- Business card box-->
 <div class="business-grid" id ="businessGrid">

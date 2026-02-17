@@ -105,13 +105,13 @@ section {
     color: var(--dark-slate);
     text-align: center;
     margin-top: 100px;
-    
-
 }
 
-.sub-text2{
+.sub-text2 {
     color: var(--primary-orange);
-
+    display: block;
+    font-size: 50px;
+    font-weight: 900;
 }
 
 .aboutWeb-subtitle {
@@ -121,23 +121,82 @@ section {
     margin: 0 auto 40px;
 }
 
+
 .search-filter-bar {
     background-color: var(--white);
-    padding: 20px;
+    padding: 24px;
     border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 120px;
-
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    margin-bottom: 40px;
+    
+   
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;  
+    gap: 16px;  
 }
-.searchInput {
-    flex: 1;
-    padding: 0.9rem 1.2rem;
-    border:2px solid var(--dark-slate);
-    border-radius: 12px;
-    font-size: 1rem;
-    font-family: Arial, sans-serif;
-    transition: border-color 1s ease;
 
+
+.searchInput,
+#searchInput {  
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #DEE2E6; 
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+
+.searchInput:focus,
+#searchInput:focus {
+    outline: none; 
+    border-color: var(--primary-orange); 
+    box-shadow: 0 0 0 3px rgba(255, 107, 1, 0.1);  
+}
+
+/* Placeholder text color */
+.searchInput::placeholder,
+#searchInput::placeholder {
+    color: #aaa;
+}
+
+
+#categoryFilter,
+#sortFilter {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #DEE2E6;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background: var(--white);
+    cursor: pointer; 
+    transition: border-color 0.3s ease;
+}
+
+
+#categoryFilter:focus,
+#sortFilter:focus {
+    outline: none;
+    border-color: var(--primary-orange);
+    box-shadow: 0 0 0 3px rgba(255, 107, 1, 0.1);
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--dark-slate);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 17px;
+    opacity: 0.8;
+    margin-bottom: 40px;
 }
 
 
