@@ -201,7 +201,7 @@ section {
 
 .business-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);  /* Exactly 3 columns */
     gap: 24px;
     margin-top: 40px;
 }
@@ -212,7 +212,7 @@ section {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     padding: 24px;
     cursor: pointer;
-    postionL relative;
+    position: relative;
     border: 2px solid transparent;
     transition: transform 0.3s ease, 
                 box-shadow 0.3s ease, 
@@ -244,6 +244,23 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 12px;
+
+
+}
+
+.business-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-dark);
+    opacity: 0.85;
+    margin-bottom: 14px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
 }
 
 .business-rating {
@@ -260,8 +277,12 @@ section {
     line-height: 1;
 }
 .rating-value {
-    font-weigth: 700;
+    font-weight: 700;
     color: var(--dark-slate);
 }
 
-
+@media (max-width: 768px) {
+    .business-grid {
+        grid-template-columns: 1fr;  /* 1 card per row on mobile */
+    }
+}
