@@ -1,73 +1,54 @@
+// ===================================
+// FALL LOCAL BOOST - MAIN SERVER
+// Run with: npm start
+// Then open: http://localhost:3000
+// ===================================
+
 const express = require("express");
-const sqlite3 = require("sqlite3").verbose();
+const cors    = require("cors");
+const path    = require("path");
 
-const app = express();
-app.use(express.json());
+// Import your route files
+const businessRoutes = require("./routes/businesses");
+const reviewRoutes   = require("./routes/reviews");
 
-// Connect to SQLite database
-const db = new sqlite3.Database("./database.db", (err) => {
-  if (err) {
-    console.error(err.message);
-  } else {
-    console.log("Connected to SQLite database");
-  }
+const app  = express();
+const PORT = 3000;
+
+// ===================================
+// MIDDLEWARE
+// ===================================
+app.use(cors());          
+app.use(express.json());  
+
+// Serve your FrontEnd folder (HTML, CSS, JS, images)
+app.use(express.static(
+    path.join(__dirname, "../FrontEnd")
+));
+
+// ===================================
+// API ROUTES
+// ===================================
+app.use("/api/businesses", businessRoutes);
+app.use("/api/reviews",    reviewRoutes);
+
+// Test route - check server is working
+app.get("/api/health", (req, res) => {
+    res.json({ status: "Server is running!" });
 });
 
-// Create table
-db.run(`
-  CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    score INTEGER
-  )
-`);
-
-// Test route
-app.get("/", (req, res) => {
-  res.send("Backend + SQLite is working!");
+// ===================================
+// START SERVER
+// ===================================
+app.listen(PORT, () => {
+    console.log("");
+    console.log("🍂 Fall Local Boost is running!");
+    console.log(`   Visit: http://localhost:${PORT}`);
+    console.log("");
+    console.log("   API routes ready:");
+    console.log(`   → http://localhost:${PORT}/api/businesses`);
+    console.log(`   → http://localhost:${PORT}/api/businesses?category=Food`);
+    console.log(`   → http://localhost:${PORT}/api/businesses?sort=rating-high`);
+    console.log(`   → http://localhost:${PORT}/api/reviews/1`);
+    console.log("");
 });
-
-// Add data
-app.post("/add-user", (req, res) => {
-  const { name, score } = req.body;
-
-  db.run(
-    "INSERT INTO users (name, score) VALUES (?, ?)",
-    [name, score],
-    function (err) {
-      if (err) {
-        res.status(500).send("Database error");
-      } else {
-        res.send("User added");
-      }
-    }
-  );
-});
-
-// Get data
-app.get("/users", (req, res) => {
-  db.all("SELECT * FROM users", [], (err, rows) => {
-    if (err) {
-      res.status(500).send("Database error");
-    } else {
-      res.json(rows);
-    }
-  });
-});
-
-app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
-});
-
-
-db.run(`
-  CREATE TABLE IF NOT EXISTS businesses (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    rating REAL,
-    num_ratings INTEGER,
-    category TEXT,
-    description TEXT,
-    deals TEXT
-  )
-`);

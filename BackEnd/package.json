@@ -1,17 +1,18 @@
 {
-  "name": "backend",
+  "name": "fall-local-boost",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "seed": "node seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "FBLA Coding & Programming Project",
   "dependencies": {
-    "csv-parser": "^3.2.0",
-    "express": "^5.2.1",
-    "sqlite3": "^5.1.7"
+    "express": "^4.18.2",
+    "better-sqlite3": "^9.4.3",
+    "cors": "^2.8.5"
   }
 }
