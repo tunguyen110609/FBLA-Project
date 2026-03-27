@@ -5,6 +5,7 @@ function getIdFromURL() {
     return params.get('id');
 }
 
+//Captcha question generator 
 function generateCaptcha() {
     let num1 = Math.floor(Math.random() * 10) +1;
     let num2 = Math.floor(Math.random() * 10) +1;
@@ -14,6 +15,7 @@ function generateCaptcha() {
     document.getElementById('captchaQuestion').innerHTML = 'Bot Prevention: What is '  +  num1 + ' + ' + num2 + '?';
     
 }
+
 
 function showReviews(id) {
     fetch('http://localhost:3000/api/reviews/' + id)
@@ -37,6 +39,7 @@ function showReviews(id) {
         });
 }
 
+// Runs when page loads — fetches business details and reviews
 document.addEventListener('DOMContentLoaded', function() {
     let id = getIdFromURL();
 
@@ -63,3 +66,55 @@ document.addEventListener('DOMContentLoaded', function() {
     generateCaptcha();
     showReviews(id);
 });
+
+// Submit a review
+// Fetches and displays all reviews for a specific business
+function submitReview() {
+    let name = document.getElementById('authorName').value;
+    let rating = document.getElementById('starRating').value;
+    let text = document.getElementById('reviewText').value;
+    let answer = parseInt(document.getElementById('captchaAnswer').value);
+    let message = document.getElementById('formMessage');
+
+    // Validate inputs
+    if (name === '') {
+        message.innerHTML = 'Please enter your name';
+        return;
+    }
+    if (rating === '') {
+        message.innerHTML = 'Please select a rating';
+        return;
+    }
+    if (text === '') {
+        message.innerHTML = 'Please write a review';
+        return;
+    }
+    if (answer !== correctAnswer) {
+        message.innerHTML = 'Incorrect answer, please try again';
+        generateCaptcha();
+        return;
+    }
+
+
+    let bizId = getIdFromURL();
+
+    fetch('http://localhost:3000/api/reviews', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            business_id: bizId,
+            author: name,
+            rating: parseInt(rating),
+            review_text: text
+        })
+    })
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(result) {
+        message.style.color = 'green';
+        message.innerHTML = 'Review submitted successfully!';
+        showReviews(bizId);
+        generateCaptcha();
+    });
+}
