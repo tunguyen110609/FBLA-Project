@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 '<span class="rating-value">' + biz.rating + '</span>' +
                 '<span style="opacity:0.6;">(' + biz.num_ratings + ' reviews)</span>' +
                 '</div>';
+
+            document.getElementById('businessSidebar').innerHTML =
+            '<h3 style="margin-bottom:16px;">Business Info</h3>' +
+            '<p>📂 Category: ' + biz.category + '</p>' +
+            '<p>⭐ Rating: ' + biz.rating + '</p>' +
+            '<p>💬 Reviews: ' + biz.num_ratings + '</p>';
         });
 
 
