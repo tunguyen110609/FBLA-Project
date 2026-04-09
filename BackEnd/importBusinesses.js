@@ -1,3 +1,10 @@
+/*
+  One-time CSV import script for populating the businesses table
+  Runs once during setup to load 35 local businesses from Menomonee Falls, WI
+  Creates database.db file if it doesn't exist
+ */
+
+// Import required Node.js modules
 const fs = require("fs");
 const csv = require("csv-parser");
 const sqlite3 = require("sqlite3").verbose();
