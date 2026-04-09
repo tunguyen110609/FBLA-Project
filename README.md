@@ -62,13 +62,18 @@ The review form includes a math CAPTCHA. A randomly generated addition problem m
 ## Current Status
 The website is currently running locally on my laptop during development. It is not yet public, but it is fully functional as a local demo.
 
-##Future Improvements
+## Future Improvements
 - Add more businesses by expanding to additional zip codes.
 - Support more cities and regions.
 - Add images for businesses.
 - Add map integration for location browsing.
 - Improve review moderation and user accounts.
 - Add more analytics and insights for users.
+
+## Credits & Inspiration
+- Basic Express + SQLite REST API structure: https://github.com/deatiger/basic-rest-api [web:127]
+- Express.js documentation: https://expressjs.com
+- SQLite3 Node.js guide: https://github.com/mapbox/node-sqlite3
 
 ## Open Source / Third Party
 - Express.js — MIT License (https://expressjs.com)
