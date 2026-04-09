@@ -3,7 +3,7 @@
 ## What This Project Does
 Fall Local Boost is a local business directory web application designed to help users discover and support small businesses in their community. The project organizes local businesses into an easy-to-use platform where users can search, filter, sort, review, and save their favorite businesses.
 
-##Project Purpose
+## Project Purpose
 The goal of this project is to make it easier for people to find local businesses in one place. Instead of searching across multiple websites or social media pages, users can browse businesses by category, view ratings and reviews, and compare options quickly.
 
 ## Features
@@ -35,7 +35,7 @@ The goal of this project is to make it easier for people to find local businesse
 - BackEnd/app.js — Express server
 - BackEnd/database.js — SQLite database setup
 
-##Why These Technologies Were Chosen
+## Why These Technologies Were Chosen
 JavaScript was chosen for both the frontend and backend to keep the project consistent across the full stack. Node.js allows JavaScript to run on the server, while Express provides a lightweight framework for building the backend. SQLite was selected because it stores structured data locally without requiring a separate database server, making it a good choice for a standalone application.
 
 ## Libraries and Dependencies
@@ -59,20 +59,20 @@ a standalone application.
 ## Bot Prevention
 The review form includes a math CAPTCHA. A randomly generated addition problem must be answered correctly before a review can be submitted. This helps prevent automated bot submissions.
 
-##Current Status
+## Current Status
 The website is currently running locally on my laptop during development. It is not yet public, but it is fully functional as a local demo.
 
 ##Future Improvements
--Add more businesses by expanding to additional zip codes.
--Support more cities and regions.
--Add images for businesses.
--Add map integration for location browsing.
--Improve review moderation and user accounts.
--Add more analytics and insights for users.
+- Add more businesses by expanding to additional zip codes.
+- Support more cities and regions.
+- Add images for businesses.
+- Add map integration for location browsing.
+- Improve review moderation and user accounts.
+- Add more analytics and insights for users.
 
 ## Open Source / Third Party
 - Express.js — MIT License (https://expressjs.com)
 - better-sqlite3 — MIT License (https://github.com/WiseLibs/better-sqlite3)
 
-##Summary
+## Summary
 Fall Local Boost is a practical local business discovery platform built to help users find and support nearby businesses. It focuses on usability, useful features, and a clean experience while leaving room for future expansion.
