@@ -1,8 +1,10 @@
 # Fall Local Boost
 
 ## What This Project Does
-Fall Local Boost is a local business directory web app that helps users 
-discover and support small businesses in their community.
+Fall Local Boost is a local business directory web application designed to help users discover and support small businesses in their community. The project organizes local businesses into an easy-to-use platform where users can search, filter, sort, review, and save their favorite businesses.
+
+##Project Purpose
+The goal of this project is to make it easier for people to find local businesses in one place. Instead of searching across multiple websites or social media pages, users can browse businesses by category, view ratings and reviews, and compare options quickly.
 
 ## Features
 - Browse 35 local businesses with ratings, descriptions, and deals
@@ -15,7 +17,7 @@ discover and support small businesses in their community.
 - View business statistics and data analysis
 
 ## How To Run
-1. Install Node.js
+1. Install Node.js-version v20.20.2(LTS)
 2. Run: npm install
 3. Run: npm start
 4. Open: http://localhost:3000
@@ -33,14 +35,13 @@ discover and support small businesses in their community.
 - BackEnd/app.js — Express server
 - BackEnd/database.js — SQLite database setup
 
+##Why These Technologies Were Chosen
+JavaScript was chosen for both the frontend and backend to keep the project consistent across the full stack. Node.js allows JavaScript to run on the server, while Express provides a lightweight framework for building the backend. SQLite was selected because it stores structured data locally without requiring a separate database server, making it a good choice for a standalone application.
+
 ## Libraries and Dependencies
 - express: Web server framework for Node.js
 - cors: Allows frontend to communicate with backend
 - better-sqlite3: SQLite database driver
-
-## Open Source / Third Party
-- Express.js — MIT License (https://expressjs.com)
-- better-sqlite3 — MIT License (https://github.com/WiseLibs/better-sqlite3)
 
 ## Data Sources
 - Business data created specifically for this project
@@ -56,6 +57,22 @@ without requiring a separate database server, making it ideal for
 a standalone application.
 
 ## Bot Prevention
-The review form uses a math CAPTCHA — a randomly generated addition
-problem that must be answered correctly before a review can be
-submitted. This prevents automated bot submissions.
+The review form includes a math CAPTCHA. A randomly generated addition problem must be answered correctly before a review can be submitted. This helps prevent automated bot submissions.
+
+##Current Status
+The website is currently running locally on my laptop during development. It is not yet public, but it is fully functional as a local demo.
+
+##Future Improvements
+-Add more businesses by expanding to additional zip codes.
+-Support more cities and regions.
+-Add images for businesses.
+-Add map integration for location browsing.
+-Improve review moderation and user accounts.
+-Add more analytics and insights for users.
+
+## Open Source / Third Party
+- Express.js — MIT License (https://expressjs.com)
+- better-sqlite3 — MIT License (https://github.com/WiseLibs/better-sqlite3)
+
+##Summary
+Fall Local Boost is a practical local business discovery platform built to help users find and support nearby businesses. It focuses on usability, useful features, and a clean experience while leaving room for future expansion.
