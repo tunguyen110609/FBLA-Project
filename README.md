@@ -17,7 +17,7 @@ The goal of this project is to make it easier for people to find local businesse
 - View business statistics and data analysis
 
 ## How To Run
-1. Install Node.js-version v20.20.2(LTS)
+1. Install Node.js v20.20.2(LTS)
 2. Run: npm install
 3. Run: npm start
 4. Open: http://localhost:3000
@@ -47,15 +47,6 @@ JavaScript was chosen for both the frontend and backend to keep the project cons
 - Business data created specifically for this project
 - 35 local businesses from Menomonee Falls, WI area
 
-## Language Selection Rationale
-We chose JavaScript for both frontend and backend because it allows
-a consistent language across the full stack. Node.js runs JavaScript
-on the server side. Express is an industry-standard lightweight web
-framework for building RESTful APIs. SQLite was chosen as our 
-relational database because it stores structured data persistently
-without requiring a separate database server, making it ideal for
-a standalone application.
-
 ## Bot Prevention
 The review form includes a math CAPTCHA. A randomly generated addition problem must be answered correctly before a review can be submitted. This helps prevent automated bot submissions.
 
@@ -70,14 +61,12 @@ The website is currently running locally on my laptop during development. It is 
 - Improve review moderation and user accounts.
 - Add more analytics and insights for users.
 
-## Credits & Inspiration
+## Credits & Open Source
 - Basic Express + SQLite REST API structure: https://github.com/deatiger/basic-rest-api
-- Express.js documentation: https://expressjs.com
+- Express.js (MIT): https://expressjs.com  
+- better-sqlite3 (MIT): https://github.com/WiseLibs/better-sqlite3
 - SQLite3 Node.js guide: https://github.com/mapbox/node-sqlite3
 
-## Open Source / Third Party
-- Express.js — MIT License (https://expressjs.com)
-- better-sqlite3 — MIT License (https://github.com/WiseLibs/better-sqlite3)
 
 ## Summary
 Fall Local Boost is a practical local business discovery platform built to help users find and support nearby businesses. It focuses on usability, useful features, and a clean experience while leaving room for future expansion.
