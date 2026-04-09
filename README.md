@@ -71,7 +71,7 @@ The website is currently running locally on my laptop during development. It is 
 - Add more analytics and insights for users.
 
 ## Credits & Inspiration
-- Basic Express + SQLite REST API structure: https://github.com/deatiger/basic-rest-api [web:127]
+- Basic Express + SQLite REST API structure: https://github.com/deatiger/basic-rest-api
 - Express.js documentation: https://expressjs.com
 - SQLite3 Node.js guide: https://github.com/mapbox/node-sqlite3
 
