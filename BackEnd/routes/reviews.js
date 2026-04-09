@@ -1,13 +1,12 @@
-// ===================================
 // REVIEWS ROUTES
 // Handles all /api/reviews requests
-// ===================================
+
 
 const express = require('express');
 const router  = express.Router();
 const db      = require('../database');
 
-// ── GET all reviews for a business ─────────────────────────────────────
+// GET all reviews for a business
 // Example: /api/reviews/1
 router.get('/:businessId', (req, res) => {
     try {
@@ -21,7 +20,7 @@ router.get('/:businessId', (req, res) => {
     }
 });
 
-// ── POST add a new review ───────────────────────────────────────────────
+// POST add a new review
 // Example: POST /api/reviews
 // Body: { business_id, author, rating, title, review_text }
 router.post('/', (req, res) => {
