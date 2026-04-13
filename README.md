@@ -1,7 +1,7 @@
-# Fall Local Boost
+# Falls Local Boost
 
 ## What This Project Does
-Fall Local Boost is a local business directory web application designed to help users discover and support small businesses in their community. The project organizes local businesses into an easy-to-use platform where users can search, filter, sort, review, and save their favorite businesses.
+Falls Local Boost is a local business directory web application designed to help users discover and support small businesses in their community. The project organizes local businesses into an easy-to-use platform where users can search, filter, sort, review, and save their favorite businesses.
 
 ## Project Purpose
 The goal of this project is to make it easier for people to find local businesses in one place. Instead of searching across multiple websites or social media pages, users can browse businesses by category, view ratings and reviews, and compare options quickly.
@@ -69,4 +69,4 @@ The website is currently running locally on my laptop during development. It is 
 
 
 ## Summary
-Fall Local Boost is a practical local business discovery platform built to help users find and support nearby businesses. It focuses on usability, useful features, and a clean experience while leaving room for future expansion.
+Falls Local Boost is a practical local business discovery platform built to help users find and support nearby businesses. It focuses on usability, useful features, and a clean experience while leaving room for future expansion.
